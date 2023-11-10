@@ -26,5 +26,6 @@ public:
     void renderEntities(const std::vector<Entity>& ent_vec);
 
     int w, h;
+    bool render_ascii;
 };
 #endif //ROGUE_PYT_CPP_RENDERER_H

@@ -4,7 +4,7 @@ Entity::Entity() {
 
 }
 
-Entity::Entity(int x, int y, char chr, Colour col): x(x), y(y), chr(chr), col(col) {}
+Entity::Entity(int x, int y, char chr, Colour fg_col, Colour bg_col): x(x), y(y), chr(chr), fg_col(fg_col), bg_col(bg_col) {}
 
 Entity::~Entity() = default;
 

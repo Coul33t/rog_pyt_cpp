@@ -3,6 +3,7 @@
 
 #include <vector>
 
+#include <SDL2/SDL.h>
 #include "BearLibTerminal.h"
 
 #include "entity.hpp"
