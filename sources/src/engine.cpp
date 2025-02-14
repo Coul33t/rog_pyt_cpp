@@ -6,9 +6,22 @@ Engine::Engine() {
 
 Engine::~Engine() = default;
 
+void Engine::addEntity(const Entity& ent) {
+    this->entities.push_back(ent);
+}
+
+void Engine::generateEnemies() {
+    addEntity(EntitiesFactory::createTestNPC(10, 10));
+}
+
 void Engine::init() {
     player = EntitiesFactory::createPlayer(5, 5);
+    generateEnemies();
     renderer.init();
+}
+
+void Engine::handleEvents() {
+    
 }
 
 void Engine::run() {

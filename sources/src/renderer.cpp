@@ -1,4 +1,4 @@
-#include "../include/renderer.h"
+#include "../include/renderer.hpp"
 
 Renderer::Renderer(int w, int h): w(w), h(h) {}
 
@@ -31,7 +31,7 @@ void Renderer::renderString(uint x, uint y, std::string str, Colour fg, Colour b
 }
 
 void Renderer::renderEntity(const Entity& ent) {
-    renderChar(ent.x, ent.y, ent.chr, ent.fg_col, ent.bg_col);
+    renderChar(ent.x, ent.y, ent.chr, ent.col.fg, ent.col.bg);
 }
 
 void Renderer::renderEntities(const std::vector<Entity>& ent_vec) {

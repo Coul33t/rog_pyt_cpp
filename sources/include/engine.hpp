@@ -9,13 +9,19 @@
 #include "entity.hpp"
 #include "entities_factory.hpp"
 
-#include "renderer.h"
+#include "renderer.hpp"
 
 class Engine {
 public:
     Engine();
     ~Engine();
 
+    void addEntity(const Entity& ent);
+    
+    void generateEnemies();
+
+    void handleEvents();
+    
     void init();
     void run();
 

@@ -1,7 +1,7 @@
 #ifndef _ROGPYTCPP_ENTITY_HPP_
 #define _ROGPYTCPP_ENTITY_HPP_
 
-#include "tools.hpp"
+#include "types.hpp"
 
 class Entity {
 public:
@@ -12,8 +12,7 @@ public:
     void move(int dx, int dy);
 
     int x, y;
-    Colour fg_col;
-    Colour bg_col;
+    ColoursVariations col;
     char chr;
 };
 

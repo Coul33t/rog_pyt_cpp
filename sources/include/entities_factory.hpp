@@ -6,6 +6,7 @@
 
 namespace EntitiesFactory {
     Entity createPlayer(uint x, uint y);
+    Entity createTestNPC(uint x, uint y);
 };
 
 #endif //_ROGPYTCPP_ENTITIES_FACTORY_
